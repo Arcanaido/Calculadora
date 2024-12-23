@@ -1,0 +1,10 @@
+Olá prezado professor da ebac,
+
+me chamo Julius Maisonnette e estes são os comandos utilizados no programa shell script "calculadora.sh":
+
+*echo
+*sudo apt update
+*sudo apt install python 3 -y
+*python3
+
+O segundo arquivo é a calculado feita em python, decidi fazer desse jeito pois fui informado que essa era a melhor "pratica" e que o código ficaria mais facíl de ler desse jeito.
