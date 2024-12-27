@@ -37,8 +37,8 @@ except (SyntaxError, NameError, TypeError):
 
 ## Limitações
 
-..*  Segurança: A função eval pode executar código arbitrário, representado um risco caso o usuário insira comandos maliciosos.
-..*  Operadores suportados: Apenas operadores básicos (+, -, *, /).
+- Segurança: A função eval pode executar código arbitrário, representado um risco caso o usuário insira comandos maliciosos.
+- Operadores suportados: Apenas operadores básicos (+, -, *, /).
 
 ## 2. Script Shell de Verificação
 
@@ -75,22 +75,22 @@ fi
 
 1. O script verifica a presença do Python 3 no sistema com o comando python3 --version
 2. Caso o Python 3 não esteja instalado
-   ..* O usuário é informado e questionado se deseja instalá-lo.
-   ..* Se o usuário concordar, o script usa sudo apt update e sudo apt install python 3 para realizar a instalação
-   ..* Caso o usuário recuse, o script exibe uma mensagem informando como proceder manualmente
+   - O usuário é informado e questionado se deseja instalá-lo.
+   - Se o usuário concordar, o script usa sudo apt update e sudo apt install python 3 para realizar a instalação
+   - Caso o usuário recuse, o script exibe uma mensagem informando como proceder manualmente
 3. Se o Python3 estiver instalado, o script executa o arquivo calculadora.py
 
 ## Limitações
 
-..* Distribuição Linux: O script presume um sistema baseado em Debian (uso do apt para instalação)
-..* Permissões administrativas: A instalação do Python 3 requer que o usuário esteja no grupo sudo
+- Distribuição Linux: O script presume um sistema baseado em Debian (uso do apt para instalação)
+- Permissões administrativas: A instalação do Python 3 requer que o usuário esteja no grupo sudo
 
 ## Como usar
 
 ## Pré-requisitos
 
-..* Um terminal Linux
-..* Ter acesso ao comando sudo
+- Um terminal Linux
+- Ter acesso ao comando sudo
 
 ## Passos
 
@@ -100,6 +100,6 @@ fi
 
 ## Melhorias Futuras
 
-..* Substituir o uso de eval na calculadora por uma implementação personalizada para maior segurança.
-..* Tornar o script shell compatível com outras distribuições Linux
-..* Adicionar suporte a operadores matemáticos avançados (e.g, potência, raízes).
+- Substituir o uso de eval na calculadora por uma implementação personalizada para maior segurança.
+- Tornar o script shell compatível com outras distribuições Linux
+- Adicionar suporte a operadores matemáticos avançados (e.g, potência, raízes).
