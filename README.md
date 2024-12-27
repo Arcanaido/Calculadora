@@ -20,6 +20,7 @@ inválido, exibe uma mensagem de erro
 
 ## Código
 
+```json
 operacao = input("Qual operação você gostaria de realizar?")
 
 try:
@@ -27,6 +28,7 @@ try:
     print("Resultado: ", resultado)
 except (SyntaxError, NameError, TypeError):
     print("Formato de operação inválido. Use apenas números e operadores (+, -, *, /)")
+```
 
 ## Funcionamento
 
@@ -49,6 +51,7 @@ except (SyntaxError, NameError, TypeError):
 Este script verifica se o interpretador Python 3 está instalado no sistema. Caso não esteja, oferece ao usuário a opção de 
 instalá-lo. Se p Python 3 estiver presente, o script executa a calculadora.
 
+```json
 ## Código
 
 #!/bin/bash
@@ -70,6 +73,7 @@ else
     echo "Python 3 já está instalado, executando a calculadora ..."
     python3 'calculadora.py'
 fi
+```
 
 ## Funcionamento
 
