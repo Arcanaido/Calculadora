@@ -1,6 +1,6 @@
-#Documentação do Projeto de Calculadora em Python com Verificação em Python com Verificação em Shell Script
+# Documentação do Projeto de Calculadora em Python com Verificação em Python com Verificação em Shell Script
 
-##Visão Geral
+## Visão Geral
 
 Este projeto é composto por:
 
@@ -9,16 +9,16 @@ Este projeto é composto por:
 
 
 
-##1. Calculadora em Python
+## 1. Calculadora em Python
 
-##Arquivo: calculadora.py
+## Arquivo: calculadora.py
 
-##Descrição
+## Descrição
 
 A calculadora permite ao usuário inserir uma expressão matemática e retorna o resultado. Caso o formato da expressão seja
 inválido, exibe uma mensagem de erro
 
-##Código
+## Código
 
 operacao = input("Qual operação você gostaria de realizar?")
 
@@ -28,28 +28,28 @@ try:
 except (SyntaxError, NameError, TypeError):
     print("Formato de operação inválido. Use apenas números e operadores (+, -, *, /)")
 
-##Funcionamento
+## Funcionamento
 
 1. O usuário insere uma expressão matemática (e.g, 2 + 2 ou 5 * (3 + 1))
 2. O programa tenta avaliar a expressão usando a função eval.
 3. Caso a expressão seja válida, o resultado é exibido.
 4. Caso contrário, uma mensagem de erro é exibida informando sobre o formato inválido
 
-##Limitações
+## Limitações
 
 ..* Segurança: A função eval pode executar código arbitrário, representado um risco caso o usuário insira comandos maliciosos.
 ..* Operadores suportados: Apenas operadores básicos (+, -, *, /).
 
-##2. Script Shell de Verificação
+## 2. Script Shell de Verificação
 
-##Arquivo: verifica_python3.sh
+## Arquivo: verifica_python3.sh
 
-##Descrição
+## Descrição
 
 Este script verifica se o interpretador Python 3 está instalado no sistema. Caso não esteja, oferece ao usuário a opção de 
 instalá-lo. Se p Python 3 estiver presente, o script executa a calculadora.
 
-##Código
+## Código
 
 #!/bin/bash
 
@@ -71,7 +71,7 @@ else
     python3 'calculadora.py'
 fi
 
-##Funcionamento
+## Funcionamento
 
 1. O script verifica a presença do Python 3 no sistema com o comando python3 --version
 2. Caso o Python 3 não esteja instalado
@@ -80,25 +80,25 @@ fi
    ..* Caso o usuário recuse, o script exibe uma mensagem informando como proceder manualmente
 3. Se o Python3 estiver instalado, o script executa o arquivo calculadora.py
 
-##Limitações
+## Limitações
 
 ..* Distribuição Linux: O script presume um sistema baseado em Debian (uso do apt para instalação)
 ..* Permissões administrativas: A instalação do Python 3 requer que o usuário esteja no grupo sudo
 
-##Como usar
+## Como usar
 
-##Pré-requisitos
+## Pré-requisitos
 
 ..* Um terminal Linux
 ..* Ter acesso ao comando sudo
 
-##Passos
+## Passos
 
 1. Certifique-se de que os arquivos calculadora.py e verifica_python3.sh estejam no mesmo diretório
 2. Execute o script shell: ./verifica_python3.sh
 3. Siga as instruções exibidas pelo script para verificar ou instalar o Python 3 e executar a calculadora.
 
-##Melhorias Futuras
+## Melhorias Futuras
 
 ..* Substituir o uso de eval na calculadora por uma implementação personalizada para maior segurança.
 ..* Tornar o script shell compatível com outras distribuições Linux
