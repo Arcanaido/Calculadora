@@ -37,8 +37,8 @@ except (SyntaxError, NameError, TypeError):
 
 ## Limitações
 
-..* Segurança: A função eval pode executar código arbitrário, representado um risco caso o usuário insira comandos maliciosos.
-..* Operadores suportados: Apenas operadores básicos (+, -, *, /).
+..*  Segurança: A função eval pode executar código arbitrário, representado um risco caso o usuário insira comandos maliciosos.
+..*  Operadores suportados: Apenas operadores básicos (+, -, *, /).
 
 ## 2. Script Shell de Verificação
 
